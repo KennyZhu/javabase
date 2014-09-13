@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <properties resource="jdbc.properties">
+    </properties>
+    <!--<plugins>-->
+    <!--<plugin interceptor="com.qm.framework.database.mybatis.plugin.PaginationInterceptor" />-->
+    <!--<plugin interceptor="com.qm.framework.database.mybatis.plugin.SwitchTemplateDBInterceptor" />-->
+    <!--</plugins>-->
+    <environments default="sme">
+        <environment id="sme">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="${jdbc.driver}"/>
+                <property name="url" value="${jdbc.url}"/>
+                <property name="username" value="${jdbc.username}"/>
+                <property name="password" value="${jdbc.password}"/>
+                <property name="poolMaximumActiveConnections" value="20"/>
+                <property name="poolMaximumCheckoutTime" value="60000"/>
+                <property name="poolTimeToWait" value="60000"/>
+                <property name="poolPingQuery" value="select * from dual"/>
+                <property name="poolPingEnabled" value="true"/>
+                <property name="poolPingConnectionsNotUsedFor" value="120000"/>
+            </dataSource>
+        </environment>
+
+        <environment id="wtxj">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="${wtxj.jdbc.driver}"/>
+                <property name="url" value="${wtxj.jdbc.url}"/>
+                <property name="username" value="${wtxj.jdbc.username}"/>
+                <property name="password" value="${wtxj.jdbc.password}"/>
+            </dataSource>
+        </environment>
+
+        <environment id="fl">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="${fl.jdbc.driver}"/>
+                <property name="url" value="${fl.jdbc.url}"/>
+                <property name="username" value="${fl.jdbc.username}"/>
+                <property name="password" value="${fl.jdbc.password}"/>
+            </dataSource>
+        </environment>
+
+        <environment id="qmetl">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="${qmetl.jdbc.driver}"/>
+                <property name="url" value="${qmetl.jdbc.url}"/>
+                <property name="username" value="${qmetl.jdbc.username}"/>
+                <property name="password" value="${qmetl.jdbc.password}"/>
+            </dataSource>
+        </environment>
+
+    </environments>
+    <databaseIdProvider type="VENDOR">
+        <property name="SQL Server" value="sqlserver"/>
+        <property name="DB2" value="db2"/>
+        <property name="Oracle" value="oracle"/>
+        <property name="MySQL" value="mysql"/>
+    </databaseIdProvider>
+    <mappers>
+        <mapper resource="com/yunnar/core/common/test/dao/impl/PlaceMapper.xml"/>
+        <mapper resource="com/yunnar/core/sns/dao/impl/SnsFollowMapper.xml"/>
+        <mapper resource="com/yunnar/core/trans/dao/impl/TransFlightMapper.xml"/>
+        <mapper resource="com/yunnar/core/trans/dao/impl/TransPriceMapper.xml"/>
+    </mappers>
+</configuration>
