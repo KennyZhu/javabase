@@ -1,4 +1,4 @@
-package com.yunnar.core.framework.base;
+package com.zkenny.core.framework.base;
 
 import java.io.Serializable;
 

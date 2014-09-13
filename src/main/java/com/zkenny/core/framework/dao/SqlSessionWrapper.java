@@ -1,4 +1,4 @@
-package com.yunnar.core.framework.dao;
+package com.zkenny.core.framework.dao;
 
 import org.apache.ibatis.exceptions.IbatisException;
 import org.apache.ibatis.session.RowBounds;
