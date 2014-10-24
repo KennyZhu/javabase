@@ -4,20 +4,17 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.yunnar</groupId>
+    <groupId>com.zkenny</groupId>
     <artifactId>core</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <local.scm.svn.host>115.29.202.192</local.scm.svn.host>
-        <projectName>yunnar</projectName>
+        <projectName>javabase</projectName>
         <file_encoding>UTF-8</file_encoding>
     </properties>
 
     <scm>
-        <connection>scm:svn:http://${local.scm.svn.host}/${projectName}/core/</connection>
-        <developerConnection>scm:svn:http://${local.scm.svn.host}/${projectName}/core/
-        </developerConnection>
+        <connection>scm:git:https://github.com/KennyZhu/javabase.git</connection>
     </scm>
     <profiles>
         <profile>
@@ -63,7 +60,6 @@
                 <configuration>
                     <autoVersionSubmodules>true</autoVersionSubmodules>
                     <preparationGoals>clean install</preparationGoals>
-                    <tagBase>http://${local.scm.svn.host}/${projectName}/core/</tagBase>
                 </configuration>
             </plugin>
             <plugin>
