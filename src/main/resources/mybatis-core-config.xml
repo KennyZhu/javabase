@@ -4,10 +4,6 @@
 <configuration>
     <properties resource="jdbc-core.properties">
     </properties>
-    <!--<plugins>-->
-    <!--<plugin interceptor="com.qm.framework.database.mybatis.plugin.PaginationInterceptor" />-->
-    <!--<plugin interceptor="com.qm.framework.database.mybatis.plugin.SwitchTemplateDBInterceptor" />-->
-    <!--</plugins>-->
     <environments default="sme">
         <environment id="sme">
             <transactionManager type="JDBC"/>
