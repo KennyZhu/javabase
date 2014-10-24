@@ -1,4 +1,4 @@
-package com.zkenny.controller;
+package com.zkenny.controller.login;
 
 /**
  * Desc:
