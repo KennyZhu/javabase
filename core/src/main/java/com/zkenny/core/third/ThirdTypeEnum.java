@@ -1,4 +1,4 @@
-package com.zkenny.core.framework.third;
+package com.zkenny.core.third;
 
 /**
  * Desc:第三方登录类型

@@ -1,4 +1,4 @@
-package com.zkenny.core.framework.common;
+package com.zkenny.core.common;
 
 import com.google.inject.Guice;
 import com.google.inject.Injector;

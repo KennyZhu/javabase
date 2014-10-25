@@ -1,4 +1,4 @@
-package com.zkenny.core.framework.base;
+package com.zkenny.core.base;
 
 import java.io.Serializable;
 
