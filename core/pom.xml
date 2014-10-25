@@ -7,11 +7,13 @@
     <groupId>com.zkenny</groupId>
     <artifactId>core</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
 
-    <properties>
-        <projectName>javabase</projectName>
-        <file_encoding>UTF-8</file_encoding>
-    </properties>
+    <parent>
+        <groupId>com.zkenny</groupId>
+        <artifactId>javabase</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
 
     <scm>
         <connection>scm:git:https://github.com/KennyZhu/javabase.git</connection>
