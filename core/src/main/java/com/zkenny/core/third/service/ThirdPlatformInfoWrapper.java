@@ -8,7 +8,7 @@ package com.zkenny.core.third.service;
  */
 public interface ThirdPlatformInfoWrapper {
     /**
-     * »ñÈ¡êÇ³Æ
+     * è·å–æ˜µç§°
      *
      * @return
      */
