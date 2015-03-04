@@ -6,14 +6,17 @@ package com.zkenny.core.third;
  * <br/>Time: 21:27
  * <br/>User: kennyzhu
  */
-public enum ThirdTypeEnum {
+public enum ThirdPlatformEnum {
 
     QQ("qq"),
     WeiBo("weibo");
     private String platform;
 
-    private ThirdTypeEnum(String platform) {
+    ThirdPlatformEnum(String platform) {
         this.platform = platform;
     }
 
+    public String getPlatform() {
+        return platform;
+    }
 }

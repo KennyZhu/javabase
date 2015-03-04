@@ -17,6 +17,7 @@
     <properties>
         <projectName>javabase</projectName>
         <file_encoding>UTF-8</file_encoding>
+        <project.springversion>4.1.5.RELEASE</project.springversion>
     </properties>
 
     <profiles>
