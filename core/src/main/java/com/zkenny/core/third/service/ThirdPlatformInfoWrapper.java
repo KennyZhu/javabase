@@ -1,5 +1,7 @@
 package com.zkenny.core.third.service;
 
+import com.zkenny.core.third.bean.AccessTokenWrapper;
+
 /**
  * Desc:
  * <p/>Date: 2015/3/4
@@ -12,5 +14,5 @@ public interface ThirdPlatformInfoWrapper {
      *
      * @return
      */
-    String getNickName();
+    String getNickName(AccessTokenWrapper accessToken);
 }
